@@ -216,3 +216,45 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyw.bak
+*.spec
+dist/
+build/
+*.egg-info/
+
+# Entornos virtuales
+venv/
+.venv/
+env/
+.env/
+
+# Configuración personal (contiene rutas, historial...)
+.voiceai/
+
+# Modelos descargados (son muy grandes)
+models/
+*.bin
+*.pt
+*.onnx
+vosk-model-*/
+
+# Logs de conversación
+*.log
+voiceai_log.txt
+
+# PyInstaller
+*.manifest
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-*
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
