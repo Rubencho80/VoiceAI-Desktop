@@ -192,11 +192,10 @@ pyinstaller --noconsole --onefile --name VoiceAI voiceai.py
 
 ```
 voiceai-desktop/
-├── voiceai.py              # Aplicación principal
+├── VoiceaAI.pyw            # Aplicación principal
 ├── requirements.txt        # Dependencias Python
 ├── .gitignore
-├── README.md
-└── iniciar_voiceai.pyw     # Lanzador sin CMD (opcional, créalo tú)
+└── README.md
 ```
 
 La configuración se guarda en `~/.voiceai/config.json` (no se sube a Git).
