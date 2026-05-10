@@ -31,22 +31,9 @@ Detecta una palabra clave, transcribe tu voz con Whisper, envía la pregunta a c
 
 ## 🖥️ Captura
 
-```
-┌─────────────────────────────────────────────────────┐
-│  ⚡ VoiceAI                                        ✕ │
-├─────────────────────────────────────────────────────┤
-│  🎙 Dijiste:                                         │
-│  "¿Cuál es la capital de Francia?"                  │
-│ ─────────────────────────────────────────────────── │
-│  🤖 VoiceAI:                                         │
-│                                                     │
-│  La capital de Francia es **París**. Es la ciudad   │
-│  más poblada del país y sede del gobierno...        │
-│                                                     │
-│                                            ⎘ Copiar │
-│  28s                                                │
-└─────────────────────────────────────────────────────┘
-```
+<img width="530" height="391" alt="image" src="https://github.com/user-attachments/assets/7119d336-f58c-49c0-a54c-72bbea858968" />
+<img width="535" height="395" alt="image" src="https://github.com/user-attachments/assets/b2b802ee-0872-45b6-9260-0bbca5a50aef" />
+
 
 ---
 
@@ -59,14 +46,14 @@ Detecta una palabra clave, transcribe tu voz con Whisper, envía la pregunta a c
 
 ```bash
 # Descargar un modelo (ejemplo)
-ollama pull qwen2.5:3b
+ollama pull qwen3.5:4b
 ```
 
 ### 2. Clonar el repositorio
 
 ```bash
-git clone https://github.com/TU_USUARIO/voiceai-desktop.git
-cd voiceai-desktop
+git clone https://github.com/TU_USUARIO/VoiceAI-Desktop.git
+cd VoiceAI-Desktop
 ```
 
 ### 3. Instalar dependencias
@@ -83,7 +70,7 @@ pip install -r requirements.txt
 python voiceai.py
 ```
 
-La app se minimiza a la bandeja del sistema. Busca el icono azul ⚡.
+La app se minimiza a la bandeja del sistema. Busca el icono azul 🔵.
 
 ---
 
@@ -91,8 +78,8 @@ La app se minimiza a la bandeja del sistema. Busca el icono azul ⚡.
 
 1. Asegúrate de que Ollama está corriendo: `ollama serve`
 2. Ejecuta `voiceai.py`
-3. Di **"Jarvis"** (o tu palabra clave configurada)
-4. Habla tu pregunta
+3. Di **"Asistente"** (o tu palabra clave configurada)
+4. Di tu pregunta
 5. La IA responde en texto y voz
 
 ---
@@ -159,7 +146,7 @@ En **Configuración → Voz IA** → pulsa **Detectar voces** para ver todas las
 
 ## 🧠 Conversación continua
 
-Una vez que la IA responde, el orbe se vuelve **verde** 🟢 y puedes seguir hablando directamente sin repetir la palabra clave. El modo se desactiva tras X segundos de silencio (configurable) o al decir la "palabra de parada" (por defecto: *"para"*).
+Una vez que la IA responde, puedes seguir hablando directamente sin repetir la palabra clave. El modo se desactiva tras X segundos de silencio (configurable) o al decir la "palabra de parada" (por defecto: *"para"*).
 
 ---
 
@@ -169,8 +156,8 @@ Activa el log en **Configuración → Log**. Formato del fichero:
 
 ```
 [2025-05-10 18:32]
-Tú: ¿qué es la fotosíntesis?
-IA:  La fotosíntesis es el proceso por el cual...
+Tú: ¿Quién es Rubencho_80?
+IA:  Es la persona más famosa del mundo.
 ────────────────────────────────────────────────────────────
 ```
 
