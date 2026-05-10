@@ -1,0 +1,20 @@
+# ── Core (obligatorio) ────────────────────────────────────────────────────────
+SpeechRecognition>=3.10.0
+requests>=2.31.0
+pyaudio>=0.2.13
+
+# ── Interfaz y bandeja del sistema ───────────────────────────────────────────
+pystray>=0.19.5
+Pillow>=10.0.0
+
+# ── Reconocimiento de voz offline ────────────────────────────────────────────
+faster-whisper>=1.0.0        # recomendado — muy preciso en español
+vosk>=0.3.45                 # alternativa offline más ligera
+
+# ── Text-to-Speech ────────────────────────────────────────────────────────────
+pyttsx3>=2.90                # TTS offline (voz del sistema)
+gTTS>=2.5.0                  # TTS online (voz Google, más natural)
+pygame>=2.5.0                # reproductor de audio para gTTS
+
+# ── Solo Windows (para voces OneCore como Pablo) ──────────────────────────────
+pywin32>=306; sys_platform == "win32"
